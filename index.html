@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FM DX TEF6686 Live Server</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1em 2em;
+      text-align: center;
+    }
+    main {
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-bottom: 2em;
+    }
+    h1, h2 {
+      color: #003366;
+    }
+    ul {
+      padding-left: 1.5em;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+      padding: 1em 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FM DX TEF6686 Live Server</h1>
+    <p>Live DX Monitoring from Cape Cod, MA</p>
+  </header>
+  <main>
+    <section>
+      <h2>About the Live Server</h2>
+      <p>
+        This server provides live FM DX reception data using a TEF6686 tuner. The goal is to monitor long-distance FM signals, particularly during the E-Skip and Tropo seasons.
+      </p>
+    </section>
+
+    <section>
+      <h2>Antenna Setup</h2>
+      <p>
+        The system uses a 10 Element InnovAntenna mounted at 20' AGL. The antenna can be rotated manually and will be repositioned throughout the DX season.
+      </p>
+      <ul>
+        <li><strong>SW (Southwest)</strong>: Default orientation outside E-Skip peak.</li>
+        <li><strong>NE (Northeast)</strong>: Targets European DX during E-Skip season.</li>
+        <li><strong>S (South)</strong>: Oriented for Latin American DX opportunities.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How to deduce Antenna Orientation</h2>
+      <ul>
+        <li><strong>SW:</strong> 101.9 will be stronger than 99.9. 94.7 and 97.3 will be very strong.</li>
+        <li><strong>NE:</strong> 99.9, 101.1, 102.9 and 106.1 are the strongest signals.</li>
+        <li><strong>S:</strong> 95.1 is similar strength to 99.9 and 101.9. Locals overall not quite as strong.</li>
+      </ul>
+    </section>
+
+    <section>
+        <h2>Best DX Frequencies</h2>
+        <table border="1" style="border-collapse: collapse; width: 100%; text-align: left;">
+          <thead>
+            <tr>
+              <th>Directions</th>
+              <th>Frequency</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>All</strong></td>
+              <td>87.5-87.9</td>
+              <td>Clear from DTV or other pests for Trans-Atlantic targets. Some Latin America and US "Franken FM" as well.</td>
+            </tr>
+            <tr>
+              <td><strong>NE, S</strong></td>
+              <td>88.5</td>
+              <td>Generally a good low frequency for early Es. St. John's NL is a good first-hop Trans-Atlantic indicator.</td>
+            </tr>
+            <tr>
+              <td><strong>All</strong></td>
+              <td>91.7</td>
+              <td>All purpose open frequency. A few pests to the west but none particularly strong signals.</td>
+            </tr>
+            <tr>
+              <td><strong>All</strong></td>
+              <td><b>93.1</b></td>
+              <td>Very good frequency with lots of US and Exotic targets. Pests in NYC and Portland, ME but not too bad.</td>
+            </tr>
+            <tr>
+              <td><strong>All</strong></td>
+              <td><b>93.9</b></td>
+              <td>Also has NYC & Portland pests, but otherwise is very open, particularly down the coast. Best sub-100 DX channel.</td>
+            </tr>
+            <tr>
+              <td><strong>S, NE</strong></td>
+              <td>95.7</td>
+              <td>Good DX frequency all-around. Usable to the west for Es/Tropo, but WKSS Hartford pest is an annoyance.</td>
+            </tr>
+            <tr>
+              <td><strong>S, NE</strong></td>
+              <td>96.5</td>
+              <td>Dueling pests to the west, but like 95.7 is usable that way. Very good DX frequency to the south for Latin America.</td>
+            </tr>
+            <tr>
+              <td><strong>All</strong></td>
+              <td><b>97.1</b></td>
+              <td>Almost as good as 93.9, just an NYC pest. Great channel for Meteor Scatter to the SW.</td>
+            </tr>
+            <tr>
+              <td><strong>All</strong></td>
+              <td><b>98.9</b></td>
+              <td>Premium DX channel, great for SW meteors. Listen for WUSL Philadelphia which is longest distance "regular" reception.</td>
+            </tr>
+            <tr>
+              <td><strong>S, SW</strong></td>
+              <td>100.1</td>
+              <td>Good frequency, nice and clear especially further south. 99.9 adjacent local can be a challenge, especially NE.</td>
+            </tr>
+            <tr>
+              <td><strong>S, SW</strong></td>
+              <td>102.1</td>
+              <td>Very open frequency, but can be challenged by 102.3 HD sideband to the NE, and strong analog adjancet (101.9) to SW</td>
+            </tr>
+            <tr>
+              <td><strong>NE, S</strong></td>
+              <td>104.3</td>
+              <td>Amazing frequency except for a pesky translator over 60 miles away that is somehow pretty strong to the west.</td>
+            </tr>
+            <tr>
+              <td><strong>All</strong></td>
+              <td><b>104.5</b></td>
+              <td>The best DX frequency on Cape Cod. Enjoy. Just a pest to the northwest that is manageable.</td>
+            </tr>
+            <tr>
+              <td><strong>S, NE</strong></td>
+              <td>105.5</td>
+              <td>Great open frequency with few regional pests that are all lower power. But the DX is also lower power on this channel...</td>
+            </tr>
+            <tr>
+              <td><strong>S, NE</strong></td>
+              <td>107.3</td>
+              <td>Good open frequency, particularly down the coast where 107.3 WPUR is a good tropo indicator. Pest to the NW near Boston.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    <section>
+      <h2>Location & DX Conditions</h2>
+      <p>
+        Cape Cod is renowned for its strategic position during multi-hop E-Skip events. The unique geography allows rare reception from Europe, the Caribbean, and South America.
+      </p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 FM DX Cape Cod | TEF6686 Monitoring Project
+  </footer>
+</body>
+</html>
